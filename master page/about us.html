@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - All For One</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    /* Background Video */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.4);
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    form {
+      margin: 30px 0;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      resize: vertical;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #00bcd4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+
+    .contact,
+    .privacy {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="bg-video">
+    <source
+      src="https://videos.pexels.com/video-files/5453622/5453622-uhd_2560_1440_24fps.mp4"
+      type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+  <div class="container">
+    <h1>About Us</h1>
+    <p><strong>ALL FOR ONE</strong> is your one-stop destination for all things entertainment, lifestyle, and
+      creativity. We bring together your favorite categories — Movies, Web Series, Games, Songs, Wallpapers, Food,
+      YouTube content, and even Car Modifications — all under one digital roof.</p>
+
+    <h2>Our Mission</h2>
+    <p>To simplify your digital life by helping you discover the best platforms, the latest trends, and unique
+      experiences across every category you love.</p>
+
+    <h2>What You’ll Find Here</h2>
+    <ul>
+      <li>🎬 Movies & Web Series – Info & links to streaming platforms</li>
+      <li>🎵 Songs – Trending music, playlists & artist picks</li>
+      <li>🎮 Games – PC, web, and mobile gaming links & tools</li>
+      <li>🖼️ Wallpapers – 4K, anime, aesthetic & live wallpapers</li>
+      <li>🍔 Food – Tasty trends, recipes, delivery platforms</li>
+      <li>📹 YouTube – Top creators & niche content</li>
+      <li>🚗 Cars – Modification sites, simulators & wallpapers</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>📧 Email: <a href="mailto:support@allforone.com" style="color:#00ffff;">support@allforone.com</a><br>
+      📱 Instagram: <a href="#" style="color:#00ffff;">@allforone_official</a><br>
+      🕐 Timings: Mon–Sat, 10 AM – 6 PM</p>
+
+    <form>
+      <label for="question">Have a question?</label>
+      <textarea id="question" name="question" rows="4" placeholder="Type your question here..."></textarea>
+      <button type="submit">Submit Question</button>
+    </form>
+
+    <form>
+      <label for="feedback">We’d love your feedback!</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="How can we improve?"></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+
+    <div class="privacy">
+      We respect your privacy — your feedback and messages are safe with us.
+    </div>
+  </div>
+</body>
+
+</html>
